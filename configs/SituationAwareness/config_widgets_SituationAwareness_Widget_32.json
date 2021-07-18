@@ -1,0 +1,75 @@
+{
+  "geocodeService": {
+    "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+  },
+  "enableRouting": true,
+  "bufferRange": {
+    "minimum": 1,
+    "_default": 500,
+    "maximum": 1500
+  },
+  "distanceUnits": "meters",
+  "distanceSettings": {
+    "miles": 9035,
+    "kilometers": 9036,
+    "feet": 9002,
+    "meters": 9001,
+    "yards": 9037,
+    "nauticalMiles": 9030
+  },
+  "maxDistance": 1500,
+  "defaultZoomLevel": 13,
+  "tabs": [
+    {
+      "label": "Attractions near me",
+      "type": "proximity",
+      "layerTitle": "Places of Interest in the City of Toronto",
+      "layers": "Places of Interest in the City of Toronto_5602",
+      "advStat": {
+        "stats": {
+          "fields": [],
+          "tabCount": false,
+          "outFields": [
+            {
+              "value": 0,
+              "expression": "CATEGORY",
+              "label": "CATEGORY"
+            },
+            {
+              "value": 0,
+              "expression": "WEBSITE",
+              "label": "WEBSITE"
+            },
+            {
+              "value": 0,
+              "expression": "ADDRESS",
+              "label": "ADDRESS"
+            }
+          ]
+        },
+        "analysisSummaryForReport": true,
+        "PopUpSummaryForReport": true
+      }
+    }
+  ],
+  "summaryDisplayEnabled": true,
+  "exportFieldsOptionForCSV": "popUpFields",
+  "incidentLabel": "What is nearby?",
+  "locateIncidentLabel": "My location on the map",
+  "bufferLabel": "Distance",
+  "disableVisibilityManagement": true,
+  "saveEnabled": false,
+  "savePoints": false,
+  "drawGeodesic": false,
+  "saveLines": false,
+  "savePolys": false,
+  "selectionColor": "#d3e4d5",
+  "snapshotEnabled": true,
+  "reportEnabled": false,
+  "reportSettings": {
+    "printTaskURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "footnote": "",
+    "logo": "${appPath}/widgets/SituationAwareness/images/defaultLogo.png",
+    "textColor": "#0f96cc"
+  }
+}
